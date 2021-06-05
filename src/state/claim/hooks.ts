@@ -120,6 +120,8 @@ export function useClaimCallback(
 
         const args = [claimData.index, account, claimData.amount, claimData.proof]
 
+        console.log('claim debugger:', args)
+
         return distributorContract.estimateGas['claim'](...args, {}).then(estimatedGasLimit => {
             return distributorContract
                 .claim(...args, { value: null, gasLimit: calculateGasMargin(estimatedGasLimit) })
