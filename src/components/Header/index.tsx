@@ -56,22 +56,6 @@ function AppBar(): JSX.Element {
                                                     {i18n._(t`Swap`)}
                                                 </a>
                                             </NavLink>
-                                            <NavLink href="/pool">
-                                                <a
-                                                    id={`pool-nav-link`}
-                                                    className="p-2 text-baseline text-primary hover:text-high-emphesis focus:text-high-emphesis md:p-3 whitespace-nowrap"
-                                                >
-                                                    {i18n._(t`Pool`)}
-                                                </a>
-                                            </NavLink>
-                                            <NavLink href={'/migrate'}>
-                                                <a
-                                                    id={`migrate-nav-link`}
-                                                    className="p-2 text-baseline text-primary hover:text-high-emphesis focus:text-high-emphesis md:p-3 whitespace-nowrap"
-                                                >
-                                                    {i18n._(t`Migrate`)}
-                                                </a>
-                                            </NavLink>
                                             {chainId &&
                                                 [
                                                     ChainId.MAINNET,
